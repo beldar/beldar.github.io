@@ -30,6 +30,8 @@ var AppView = Backbone.View.extend({
         
         this.carouselSpeed = 4000;
         this.initCarousel();
+        $("html,body").animate({scrollTop: 0}, 1000);
+       
     },
             
     setHeights: function(){
