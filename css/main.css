@@ -1,0 +1,961 @@
+@import url("fontawesome.css");
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+body {
+    font-family: 'Quicksand';
+}
+
+/** 
+* General Styles 
+*/
+h1,h2,h3,h4 {
+    font-family: 'Lobster Two';
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+        0px 8px 13px rgba(0,0,0,0.1),
+        0px 18px 23px rgba(0,0,0,0.1);
+}
+h1 {
+    text-shadow: 0 1px 0 #ccc, 
+        0 2px 0 #c9c9c9,
+        0 3px 0 #bbb,
+        0 4px 0 #b9b9b9,
+        0 5px 0 #aaa,
+        0 6px 1px rgba(0,0,0,.1),
+        0 0 5px rgba(0,0,0,.1),
+        0 1px 3px rgba(0,0,0,.3),
+        0 3px 5px rgba(0,0,0,.2),
+        0 5px 10px rgba(0,0,0,.25),
+        0 10px 10px rgba(0,0,0,.2),
+        0 20px 20px rgba(0,0,0,.15);
+    margin-bottom: 40px;
+}
+.quick {
+    font-family: 'Quicksand' !important;
+}
+.lobster {
+    font-family: 'Lobster Two' !important;
+}
+.wrapper{
+    margin-top: 20px;
+    position: relative;
+    height: 300px;
+    text-align: center;
+    position: relative;
+}
+strong {
+    color: gainsboro;
+}
+section {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+section:after {
+    content: " ";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    position: relative;
+}
+section > .container {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+}
+.row {
+    margin-bottom: 30px;
+}
+
+/**
+* Navigation
+**/
+nav {
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    background: #2d2d2d;
+    z-index: 1000;
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+nav ul {
+    list-style: none;
+    padding:0;
+    margin:0;
+    margin: 0 auto;
+    display: inline-block;
+}
+nav ul li {
+    float: left;
+    margin-right: 20px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+nav ul li a {
+    color: transparent;
+    position: relative;
+    padding: 20px;
+    display: block;
+    text-shadow: 0px 0px 3px #fff;
+    letter-spacing: 1px;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+nav ul li a:hover,  nav ul li a.active{
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0px 0px 1px #fff;
+}
+
+nav ul li a:after, nav ul li a:before {
+    top: 107%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    border-width: 0px;
+}
+
+nav ul li a.active:after {
+	border-color: rgba(45, 45, 45, 0);
+	border-top-color: #2d2d2d;
+	border-width: 30px;
+	margin-left: -30px;
+}
+nav ul li a.active:before {
+	border-color: rgba(245, 245, 245, 0);
+	border-top-color: #f5f5f5;
+	border-width: 31px;
+	margin-left: -31px;
+}
+
+/**
+* Welcome Section
+*
+* Featuring pure CSS background
+**/
+section#welcome {
+    background:
+        linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+        linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+        linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+        linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+        linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+        linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+    background-color: #131313;
+    background-size: 20px 20px; 
+    background-attachment: fixed;
+}
+section#welcome h1 { text-shadow: none; }
+svg {display: none;position:absolute;}
+svg path {
+    stroke-width: 1px;
+    fill: transparent;
+    stroke: white;
+    transition: stroke-width 2s, stroke-dashoffset 2s, stroke-dasharray 2s;
+}
+section#welcome > .container > .row {
+    margin-top: 61px;
+}
+
+/**
+* Skills Section
+*
+* Featuring embeded base64 encoded png background
+**/
+section#skills {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAJUlEQVQIW2NUU1P7z83NzQACX79+ZWA0NDT8D2KAAEgCUwBdCwBzBxILSQhw4QAAAABJRU5ErkJggg==) repeat;
+}
+.skill {
+    border-radius: 10px;
+    width: 100%;
+    background: rgba(255,255,255,0.3);
+    margin-bottom: 30px;
+}
+.skill .skill-icon {
+    font-size: 5em;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.3);
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    padding: 10px;
+    margin:0 auto;
+}
+.skill-title {
+    border-bottom: 1px solid #666;
+    margin: 20px 0;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+.skill-desc {
+    margin: 0 20px;
+    font-size: 1.2em;
+    text-align: justify;
+    padding-bottom: 20px;
+}
+/* Icons */
+.hi-icon {
+    display: inline-block;
+    font-size: 0px;
+    cursor: pointer;
+    margin: 15px 30px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+}
+.hi-icon:after {
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    content: '';
+    -webkit-box-sizing: content-box; 
+    -moz-box-sizing: content-box; 
+    box-sizing: content-box;
+}
+.hi-icon:before {
+    speak: none;
+    font-size: 48px;
+    line-height: 90px;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    display: block;
+    -webkit-font-smoothing: antialiased;
+}
+.hi-icon {
+    background: rgba(0,0,0,0.3);
+    -webkit-transition: background 0.2s, color 0.2s;
+    -moz-transition: background 0.2s, color 0.2s;
+    transition: background 0.2s, color 0.2s;
+}
+.hi-icon:after {
+    top: -7px;
+    left: -7px;
+    padding: 7px;
+    box-shadow: 0 0 0 4px #fff;
+    -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+    -webkit-transform: scale(.8);
+    -moz-transition: -moz-transform 0.2s, opacity 0.2s;
+    -moz-transform: scale(.8);
+    -ms-transform: scale(.8);
+    transition: transform 0.2s, opacity 0.2s;
+    transform: scale(.8);
+    opacity: 0;
+}
+.skill:hover .hi-icon {
+    background: rgba(255,255,255,1);
+    color: #666;
+}
+.skill:hover .hi-icon:after {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+}
+.icon-php:before {
+    vertical-align: top;
+    margin-top: 3px;
+}
+.icon-html:before,  .icon-css:before{
+    vertical-align: top;
+    margin-top: 5px;
+}
+.glyphicon-book:before {
+    margin-top: -3px;
+}
+.glyphicon-user:before{
+    margin-top: -5px;
+}
+.icon-nodejs:before {
+    margin-top: 3px;
+}
+.icon-aws:before {
+    margin-top: 5px;
+}
+
+
+/**
+* Work and Experiments section
+**/
+section#work {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAUElEQVQYV2Pcvn3vfwY08OfPX3QhBkZiFLKzsxFWCFIEAnhNhCnCqxBZEVjh5s27MDzDysqC6Rl0hSCT/v37h18hzDq8CpHdhFMhusOxKQQAZeY612HhR/wAAAAASUVORK5CYII=) repeat;
+}
+
+section#experiments {
+    background: url('../img/blueprint.jpg');
+}
+
+.chromebox {
+    position: relative;
+    display: block;
+    background:  white url('../img/chrome-middle.png') repeat-x top center;
+    padding-top: 75px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.chromebox .url {
+    position: absolute;
+    top: 46px;
+    left: 148px;
+}
+.chromebox img, .chromebox video { width: 100%; }
+.chromebox:before {
+    content: url('../img/chrome-top-left.png');
+    position: absolute;
+    top: 0px;
+    left:0;
+}
+.chromebox:after {
+    content: url('../img/chrome-top-right.png');
+    position: absolute;
+    top: 0px;
+    right:0;
+}
+
+.project_description p {
+    font-size: 1.6em;
+    line-height: 1.7em;
+    text-align: justify;
+    margin-top: 2em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: 700;
+}
+.project_description a {
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/**
+* Contact Section
+**/
+section#contact{
+    background: #ea6657;
+}
+
+section#contact a.social {
+    cursor: pointer;
+    padding: 25px;
+    display: block;
+    margin: 15px 30px;
+    position: relative;
+    background: #cb4e4e;
+    color: #fff;
+    box-shadow: 0 6px #ab3c3c;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+section#contact a.social:hover {
+    box-shadow: 0 4px #ab3c3c;
+    top: 2px;
+}
+
+section#contact a.social:active {
+    box-shadow: 0 0 #ab3c3c;
+    top: 6px;
+}
+section#contact a.social i {
+    display: inline-block;
+    float: left;
+    margin-left: 5px;
+    margin-right: 10px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+section#contact a.social:hover i {
+    font-size: 2em;
+}
+section#contact .alert-success strong {
+    color:#468847 !important;
+}
+section#contact form {
+    margin-top: 20px;
+}
+
+/** Css for the Contact section below media queries **/
+
+@media screen and (max-width: 992px) {
+    nav ul li { margin-right: 5px; }
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+    nav ul {
+        display: block;
+        height: 61px;
+        overflow: hidden;
+        transition: height 1s;
+        -webkit-transition: height 1s;
+    }
+    nav:hover ul{
+        height: 305px !important;
+    }
+    nav:hover ul li a {
+        display:block !important;
+    }
+    nav ul li {
+        display: block;
+        float: none;
+        width: 100%;
+    }
+    nav ul li a:after, nav ul li a:before { display: none; }
+    
+    nav ul:after, nav ul:before {
+        top: 100%;
+        left: 50%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        -ms-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+        border-width: 0px;
+    }
+
+    nav ul:after {
+            border-color: rgba(45, 45, 45, 0);
+            border-top-color: #2d2d2d;
+            border-width: 30px;
+            margin-left: -30px;
+    }
+    nav ul:before {
+            border-color: rgba(245, 245, 245, 0);
+            border-top-color: #f5f5f5;
+            border-width: 31px;
+            margin-left: -31px;
+    }
+    
+    nav ul li > a:not(.active) {
+        display: none;
+    }
+    
+    section#welcome h1{
+        margin-top: 82px;
+        margin-bottom:0;
+    }
+    section#welcome #wrapper {
+        height: 200px;
+    }  
+}
+
+/* Contact top letters */
+.grid {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    width: 100%;
+}
+.grid li {
+    position: relative;
+    float: left;
+    font-size: 12em;
+    font-size: 10vw;
+    line-height: 1.5;
+    max-height: 290px;
+    text-align: center;
+    width: 14.28%;
+    /* Fallback */
+    width: -webkit-calc(100% / 7);
+    width: calc(100% / 7);
+}
+
+/* Common styles for the letters */
+.grid li span {
+    display: inline-block;
+    font-weight: 900;
+    line-height: 1;
+    position: relative;
+    color: hsla(0, 0%, 0%, 0.6);
+    -webkit-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-perspective: 550px;
+    -ms-perspective: 550px;
+    perspective: 550px;
+    z-index: 1;
+}
+.grid li span:before,
+.grid li span:after {
+    position: absolute;
+    content: attr(data-letter);
+    line-height: inherit;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+
+.grid li span:before {
+    text-shadow: none;
+    color: hsla(0, 0%, 0%, 0.12);
+}
+
+/* Colors */
+
+.ot-letter-left { background: #e74d3c; }
+.ot-letter-left span { text-shadow: 1px 4px 6px #e74d3c, 0 0 0 hsla(0, 0%, 0%, 0.3), 1px 4px 6px #e74d3c; }
+.ot-letter-left span:after { color: #e74d3c; }
+.ot-letter-left:hover span:after { color: #ea6253; }
+
+.ot-letter-right { background: #ea6657; }
+.ot-letter-right span { text-shadow: 1px 4px 6px #ea6657, 0 0 0 hsla(0, 0%, 0%, 0.3), 1px 4px 6px #ea6657; }
+.ot-letter-right span:after { color: #ea6657; }
+.ot-letter-right:hover span:after { color: #ed7a6e; }
+
+.ot-letter-top { background: #ee7f72; }
+.ot-letter-top span { text-shadow: 1px 4px 6px #ee7f72, 0 0 0 hsla(0, 0%, 0%, 0.3), 1px 4px 6px #ee7f72; }
+.ot-letter-top span:after { color: #ee7f72; }
+.ot-letter-top:hover span:after { color: #f09389; }
+
+.ot-letter-bottom { background: #e95949; }
+.ot-letter-bottom span { text-shadow: 1px 4px 6px #e95949, 0 0 0 hsla(0, 0%, 0%, 0.3), 1px 4px 6px #e95949; }
+.ot-letter-bottom span:after { color: #e95949; }
+.ot-letter-bottom:hover span:after { color: #eb6e60; }
+
+/* Left */
+.ot-letter-left span:before,
+.ot-letter-left span:after {
+    -webkit-transform-origin: 0 50%;
+    -ms-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+}
+
+.ot-letter-left span:before {
+    -webkit-transform: scale(1.08,1) skew(0deg,1deg);
+    -ms-transform: scale(1.08,1) skew(0deg,1deg);
+    transform: scale(1.08,1) skew(0deg,1deg);
+}
+
+.ot-letter-left span:after {
+    text-shadow: -1px 0px 0px hsla(360, 100%, 100%, 0.1), 3px 0px 1px hsla(0, 0%, 0%, 0.4);
+    -webkit-transform: rotateY(-15deg);
+    -ms-transform: rotateY(-15deg);
+    transform: rotateY(-15deg);
+}
+
+.ot-letter-left:hover span:before {
+    -webkit-transform: scale(0.85,1) skew(0deg,20deg);
+    -ms-transform: scale(0.85,1) skew(0deg,20deg);
+    transform: scale(0.85,1) skew(0deg,20deg);
+}
+
+.ot-letter-left:hover span:after {
+    -webkit-transform: rotateY(-40deg);
+    -ms-transform: rotateY(-40deg);
+    transform: rotateY(-40deg);
+}
+
+/* Right */
+.ot-letter-right span:before,
+.ot-letter-right span:after {
+    -webkit-transform-origin: 100% 50%;
+    -ms-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+}
+
+.ot-letter-right span:before {
+    -webkit-transform: scale(0.85,1) skew(0deg,1deg);
+    -ms-transform: scale(0.85,1) skew(0deg,1deg);
+    transform: scale(0.85,1) skew(0deg,1deg);
+}
+
+.ot-letter-right span:after {
+    text-shadow: 1px 0px 0px hsla(360, 100%, 100%, 0.1), -3px 0px 1px hsla(0, 0%, 0%, 0.4);
+    -webkit-transform: rotateY(15deg);
+    -ms-transform: rotateY(15deg);
+    transform: rotateY(15deg);
+}
+
+.ot-letter-right:hover span:before {
+    -webkit-transform: scale(0.85,1) skew(0deg,-20deg);
+    -ms-transform: scale(0.85,1) skew(0deg,-20deg);
+    transform: scale(0.85,1) skew(0deg,-20deg);
+}
+
+.ot-letter-right:hover span:after {
+    -webkit-transform: rotateY(40deg);
+    -ms-transform: rotateY(40deg);
+    transform: rotateY(40deg);
+}
+
+/* Up */
+.ot-letter-top span:before,
+.ot-letter-top span:after {
+    -webkit-transform-origin: 50% 100%;
+    -ms-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+}
+
+.ot-letter-top span:before {
+    -webkit-transform: scale(1,0.95) skew(-4deg,0deg);
+    -ms-transform: scale(1,0.95) skew(-4deg,0deg);
+    transform: scale(1,0.95) skew(-4deg,0deg);
+}
+
+.ot-letter-top span:after {
+    text-shadow: 0px 1px 0px hsla(360, 100%, 100%, 0.1), 0px -3px 1px hsla(0, 0%, 0%, 0.4);
+    -webkit-transform: rotateX(-15deg);
+    -ms-transform: rotateX(-15deg);
+    transform: rotateX(-15deg);
+}
+
+.ot-letter-top:hover span:before {
+    -webkit-transform: translateY(-0.050em) scale(1,0.55) skew(-10deg,0deg);
+    -ms-transform: translateY(-0.050em) scale(1,0.55) skew(-10deg,0deg);
+    transform: translateY(-0.050em) scale(1,0.55) skew(-10deg,0deg);
+}
+
+.ot-letter-top:hover span:after {
+    -webkit-transform: translateY(-0.035em) rotateX(-40deg);
+    -ms-transform: translateY(-0.035em) rotateX(-40deg);
+    transform: translateY(-0.035em) rotateX(-40deg);
+}
+
+/* Down */
+.ot-letter-bottom span:before,
+.ot-letter-bottom span:after {
+    -webkit-transform-origin: 50% 0;
+    -ms-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+}
+
+.ot-letter-bottom span:before {
+    -webkit-transform: scale(1,1.05) skew(4deg,0deg);
+    -ms-transform: scale(1,1.05) skew(4deg,0deg);
+    transform: scale(1,1.05) skew(4deg,0deg);
+}
+
+.ot-letter-bottom span:after {
+    text-shadow: 0px -1px 0px hsla(360, 100%, 100%, 0.1), 0px 3px 1px hsla(0, 0%, 0%, 0.4);
+    -webkit-transform: rotateX(15deg);
+    -ms-transform: rotateX(15deg);
+    transform: rotateX(15deg);
+}
+
+.ot-letter-bottom:hover span:before {
+    -webkit-transform: translateY(-0.035em) scale(1,1.2) skew(10deg,0deg);
+    -ms-transform: translateY(-0.035em) scale(1,1.2) skew(10deg,0deg);
+    transform: translateY(-0.035em) scale(1,1.2) skew(10deg,0deg);
+}
+
+.ot-letter-bottom:hover span:after {
+    -webkit-transform: translateY(0.045em) rotateX(40deg);
+    -ms-transform: translateY(0.045em) rotateX(40deg);
+    transform: translateY(0.045em) rotateX(40deg);
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   Theses examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 144dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow:none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

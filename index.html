@@ -1,0 +1,407 @@
+<!--
+- Welcome Stranger!
+- You've reached the source code of this page!
+- With this comments I'll try to guide you through it
+- and show you the most interesting parts
+-->
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Martí Planellas</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="shortcut icon" href="apple-touch-icon.png">
+        <link href='http://fonts.googleapis.com/css?family=Lobster+Two|Quicksand:400,700' rel='stylesheet' type='text/css' />
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/font-mfizz.css" />
+        <link rel="stylesheet" href="js/vendor/elastislide/elastislide.css" />
+        <!-- Hey you can also check the CSS code with also have some interesting parts -->
+        <link rel="stylesheet" href="css/main.css" />
+        <script src="js/vendor/modernizr-2.6.1.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 10]>
+            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+        <![endif]-->
+        <nav>
+            <div class="container">
+                <ul>
+                    <li><a class="active" href="#welcome">Welcome</a></li>
+                    <li><a href="#skills">My Skills</a></li>
+                    <li><a href="#work">My Work</a></li>
+                    <li><a href="#experiments">My Experiments</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <section id="welcome">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h1 class="text-center">My name is <strong>Martí</strong> and I make web sites</h1>
+                        <div id="wrapper" class="wrapper">
+                            <!-- You probably have noticed the letters writing themselves
+                                 This is a technique first describe here: http://product.voxmedia.com/post/68085482982/polygon-feature-design-svg-animations-for-fun-and
+                                 Which they used on the awesome Xbox One Review page
+                                 I use the same principle but with a secret ingredient to be able to use it with text
+                            -->
+                            <svg version="1.1" id="awesome" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    viewBox="0 0 960 250" preserveAspectRatio="xMidYMid meet" xml:space="preserve">
+                                <g>
+                                   <path d="M111.825,169.716L68.777,61.571L25.879,169.716 M39.378,135.667h58.798H39.378z"/>
+                                   <path d="M176.926,169.716L148.427,61.571L176.926,169.716l34.349-108.145l34.349,108.145l28.499-108.145l-28.499,108.145"/>
+                                   <path d="M398.771,62.171h-69.897v107.545h69.897h-69.897 M392.771,114.369h-63.897H392.771z"/>
+                                   <path d="M435.374,137.018c0,23.999,18.299,33.599,39.749,33.599c21.75,0,35.399-13.649,35.848-26.999
+                                           c0.45-13.199-6.3-23.699-19.648-26.549l-36.749-7.95c-10.35-2.25-16.499-8.25-16.499-22.349s11.849-26.249,33.448-26.249
+                                           c21.6,0,37.349,10.2,36.749,28.049c0.6-17.85-15.149-28.049-36.749-28.049c-21.599,0-33.448,12.15-33.448,26.249
+                                           c0,14.1,5.85,19.949,16.499,22.349l36.749,7.95c13.649,2.85,20.099,13.35,19.648,26.549c-0.449,13.35-14.099,26.999-35.848,26.999
+                                           C453.673,170.616,435.374,161.017,435.374,137.018z"/>
+                                   <path d="M547.423,114.818c0-41.398,21.449-56.098,47.698-56.098s47.698,14.7,47.698,56.098s-21.449,55.798-47.698,55.798
+                                           S547.423,156.217,547.423,114.818z M547.423,114.818c0-41.398,21.449-56.098,47.698-56.098s47.698,14.7,47.698,56.098
+                                           s-21.449,55.798-47.698,55.798S547.423,156.217,547.423,114.818z"/>
+                                   <path d="M789.217,61.571v108.145V61.571l-46.648,108.145L696.071,61.571v108.145V61.571"/>
+                                   <path d="M929.917,62.171H860.02v107.545h69.897H860.02 M923.917,114.369H860.02H923.917z"/>
+                                </g>
+                           </svg>
+
+                           <svg version="1.1" id="interactive" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    viewBox="0 0 960 250" preserveAspectRatio="xMidYMid meet"  xml:space="preserve">
+                                <g>
+                                   <path d="M45.726,77.486v79.311V77.486z"/>
+                                   <path d="M150.775,156.797c0-26.437,0-52.874,0-79.311C150.775,103.923,150.775,130.36,150.775,156.797
+                                           c-18.847-26.437-37.693-52.874-56.54-79.311c0,26.437,0,52.874,0,79.311"/>
+                                   <path d="M247.464,77.486h-57.201h28.491v79.311"/>
+                                   <path d="M285.853,77.926h51.26H285.853v78.871h51.26h-51.26 M332.713,116.207h-46.86H332.713z"/>
+                                   <path d="M375.832,116.316h31.13c17.6,0,23.32-10.56,22.88-21.23c-0.55-10.67-5.28-17.6-25.08-17.6h-28.93v79.311V77.486
+                                            M429.842,95.086 M432.262,156.797c-2.2-1.54-2.75-4.62-2.75-5.94l-1.98-20.02c-0.66-8.58-6.82-14.521-19.03-14.521
+                                           c12.21,0,18.37,5.94,19.03,14.521l1.98,20.02C429.512,152.177,430.062,155.257,432.262,156.797z"/>
+                                   <path d="M522.35,156.797c-10.523-26.437-21.047-52.874-31.57-79.311c-10.487,26.437-20.973,52.874-31.46,79.311 M512.34,131.826
+                                           h-43.12H512.34z"/>
+                                   <path d="M643.568,77.486h57.2h-28.71v79.311"/>
+                                   <path d="M739.156,156.797V77.486V156.797z"/>
+                                   <path d="M775.787,77.486l28.82,79.311l28.82-79.311"/>
+                                   <path d="M871.816,156.797V77.926h51.261h-51.261V156.797h51.261H871.816z M871.816,116.207h46.86H871.816z"/>
+                                   <path d="M613.4,131.066c-3.579,19.234-15.208,27.956-33.547,27.956c-22.253,0-34.889-12.636-34.889-41.263
+                                   c0-28.514,12.636-41.262,34.889-41.262c15.879,0,26.837,6.597,31.758,20.911"/>
+                                </g>
+                           </svg>
+
+                           <svg version="1.1" id="rich" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                     viewBox="0 0 960 250" preserveAspectRatio="xMidYMid meet" xml:space="preserve">
+                                <g>
+                                   <path d="M73.506,122.495h84.901c48,0,63.601-28.8,62.4-57.9 M73.506,232.897V16.595h78.901c55.2,0,66.9,18.9,68.4,48
+                                            M73.506,16.595 M227.407,232.897c-6-4.2-7.5-12.601-7.5-16.2l-5.4-54.601c-1.8-23.4-18.6-39.601-51.901-39.601
+                                           c33.301,0,50.101,16.2,51.901,39.601l5.4,54.601C219.907,220.297,221.407,228.697,227.407,232.897z"/>
+                                   <path d="M333.603,16.595v216.302V16.595z"/>
+                                   <path d="M527.102,235.298c49.2,0,80.4-23.401,90.001-75.001"/>
+                                   <path d="M617.103,160.297c-9.601,51.601-40.801,75.001-90.001,75.001c-59.701,0-93.601-33.9-93.601-110.702
+                                           c0-76.5,33.9-110.701,93.601-110.701c42.601,0,72.001,17.7,85.201,56.101"/>
+                                   <path d="M875.998,113.197H723.297V16.896v216.001"/>
+                                   <path d="M875.998,232.897V16.896"/>
+                                </g>
+                           </svg>
+                           
+                           <svg version="1.1" id="engaging" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    viewBox="0 0 960 250" preserveAspectRatio="xMidYMid meet" xml:space="preserve">
+                                <g>
+                                   <path d="M98.893,63.952H31.321V167.92h67.572H31.321 M31.321,114.414h61.772H31.321z"/>
+                                   <path d="M224.462,63.373V167.92L149.93,63.373V167.92"/>
+                                   <path d="M364.095,87.878c-6.67-18.706-21.316-25.811-41.761-25.811c-28.711,0-45.821,13.775-45.821,53.506
+                                           c0,39.586,20.155,53.072,45.821,53.072c25.666,0,41.761-15.806,41.761-51.477h-37.266 M322.334,168.646 M364.095,167.92v-50.751
+                                           V167.92z"/>
+                                   <path d="M482.705,167.92L441.089,63.373L399.618,167.92 M412.668,135.004h56.842H412.668z"/>
+                                   <path d="M605.663,117.169h-37.267H605.663c0,35.671-16.096,51.477-41.762,51.477c-25.665,0-45.821-13.485-45.821-53.072
+                                            M605.663,87.878c-6.67-18.706-21.315-25.811-41.762-25.811c-28.711,0-45.821,13.775-45.821,53.506 M605.663,117.169v50.751
+                                           V117.169z"/>
+                                   <path d="M656.846,167.92V63.373V167.92z"/>
+                                   <path d="M795.322,63.373V167.92L720.79,63.373V167.92"/>
+                                   <path d="M934.955,117.169h-37.267H934.955c0,35.671-16.096,51.477-41.762,51.477c-25.665,0-45.821-13.485-45.821-53.072
+                                            M934.955,87.878c-6.67-18.706-21.315-25.811-41.762-25.811c-28.711,0-45.821,13.775-45.821,53.506 M934.955,167.92"/>
+                                </g>
+                           </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="container">
+                <h1 class="text-center">My Skills</h1>
+                <div class="row">
+                    <!-- 
+                    In My Skills section you can see the use of the bootstrap grid ( http://getbootstrap.com/css/#grid )
+                    How with just class names you can define different column spaces for each device
+                    lg -> large, md -> medium, sm -> small, xs -> extra small
+                    -->
+                    <div class="col-lg-3 col-md-3 col-sm-6">
+                        <div class="skill">
+                            <i class="hi-icon icon-html"></i>
+                            <h4>HTML</h4>
+                            <div class="skill-desc">
+                                <p>Over the years my knowledge of HTML as passed from XHTML to HTML 4.0 to HTML 5.</p>
+                                <p>Always exploring the new features, APIs and tricks to make the most out of the web.</p>
+                                <p>The new features of HTML5 which I'm more excited about include WebSockets, LocalStorage or AppCache.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6">
+                        <div class="skill">
+                            <i class="hi-icon icon-css"></i>
+                            <h4>CSS</h4>
+                            <div class="skill-desc">
+                                <p>It's an exciting time to play with CSS, nowadays we can accomplish things that yesterday required 
+                                    tons of JavaScript to work, the gradual replacement of layout images in favor of pure CSS techniques 
+                                    is one of the true goals of the front-end developers.</p>
+                                <p>One of my favorite features of the new CSS is playing with the <strong>3D effects</strong> and perspective and the <em>:before</em>
+                                    and <em>:after</em> pseudoelements</p>
+                                <p>The possibilities extend further when we use CSS preprocess tools such as <strong>Sass</strong> or <strong>Less</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6">
+                        <div class="skill">
+                            <i class="hi-icon icon-javascript"></i>
+                            <h4>JavaScript</h4>
+                            <div class="skill-desc">
+                                <p>JavaScript have one of the busiest community building libraries, plugins and extensions and it's hard to keep
+                                    up with all the new advancements here's some of the libraries I worked with over the years:</p>
+                                <ul>
+                                    <li>jQuery (core, UI, Mobile, and many plugins)</li>
+                                    <li>MooTools</li>
+                                    <li>Backbone.js</li>
+                                    <li>Underscore.js</li>
+                                    <li>YUI</li>
+                                    <li>Socket.io</li>
+                                    <li>d3.js</li>
+                                    <li>Meteor</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6">
+                        <div class="skill">
+                            <i class="hi-icon icon-php"></i>
+                            <h4>PHP</h4>
+                            <div class="skill-desc">
+                                <p>PHP has been always my 'weapon of choice' during the years, of course it's not the only language I used, since
+                                    I'm a great advocate of 'choose the right tool for the job', but I can say that it's the back-end language which I'm more
+                                    comfortable with.</p>
+                                <p>Of course lately you can't do much with plain PHP, and I'm as used to the MVC patter as I am with the language, and most
+                                    of the time you accomplish that using a framework, here're some of the PHP Frameworks I worked with:</p>
+                                <ul>
+                                    <li>CodeIgniter</li>
+                                    <li>Zend Framework</li>
+                                    <li>Laravel</li>
+                                    <li>FuzzyRecord</li>
+                                    <li>Doctrine ORM</li>
+                                    <li>Other custom frameworks</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6">
+                        <div class="skill">
+                            <i class="hi-icon icon-database"></i>
+                            <h4>Database</h4>
+                            <div class="skill-desc">
+                                <p>Having a strong knowledge of <abbr title="Data Base Management Systems">DBMSs</abbr> is a crucial part of the back-end 
+                                    developer, most of all having an abstraction knowledge of how Relational Models work and what are the rules for a healthy 
+                                    Database Model, having that, the rest is to get to know different syntax and software, the ones that I work with are:</p>
+                                <ul>
+                                    <li>MySQL</li>
+                                    <li>Oracle</li>
+                                    <li>MSSQL</li>
+                                    <li>MongoDB</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6">
+                        <div class="skill">
+                            <i class="hi-icon icon-mobile-device"></i>
+                            <h4>Responsive Design</h4>
+                            <div class="skill-desc">
+                                <p>Mobile browsing has grown exponentially on the last months, what begun as a trend has become a necessity
+                                    and nowadays I try to build responsive and/or fluid websites that can have different layouts depending on the 
+                                    screen viewing it.</p>
+                                <p>Because it's not just mobile or desktop anymore since the mobile screens have diversified so much lately 
+                                    modern layouts have to be able to adapt to any screen size whatsoever.</p>
+                                <p>To accomplish this I lean on <strong>CSS grid frameworks and media-queries</strong> to achieve a highly malleable layout</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6">
+                        <div class="skill">
+                            <i class="hi-icon icon-shell"></i>
+                            <h4>Server Administration</h4>
+                            <div class="skill-desc">
+                                <p>Knowing how to handle, provision and manage servers it's a very important skill on web development,
+                                    for this reason I try to stay up to date to the most efficient way to handle this processes.</p>
+                                <p>Using <strong>Composer</strong> is one of the best ways to handle external libraries and dependencies of
+                                    your project.</p>
+                                <p>Other tools like <strong>Vagrant</strong> or <strong>Puppet</strong> kind be very handy too, specially if you
+                                    have to handle and provision several instances or servers at the same time.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6">
+                        <div class="skill">
+                            <i class="hi-icon icon-microscope"></i>
+                            <h4>User Experience / User Interface</h4>
+                            <div class="skill-desc">
+                                <p>This had become a major area of influence of my work. Being able to affect the concept of a website before and after the wireframes and design
+                                    its crucial to build an interface that is both comfortable and engaging to the user.</p>
+                                <p>I think that the every layout decision of a website has to have a reason to be, and it can't only be an artistic one.</p>
+                                <p>For these reasons I like and enjoy meeting and discussing with designers the best approach at it design decisions and 
+                                    the technical limitations that might interfere.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="work">
+            <div class="container">
+                <h1 class="text-center">Latest Work</h1>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="chromebox">
+                            <a href="http://bestivalbuzz.recognitionlondon.com/" class="url" target="_blank">http://bestivalbuzz.recognitionlondon.com/</a>
+                            <video preload="auto" loop="loop" autoplay="autoplay">
+                                <source src="/video/buzz.mp4" type="video/mp4" >
+                                <source src="/video/buzz.ogv" type="video/ogg" >
+                            </video>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="project_description">
+                            <h2>Bestival Buzz Tracker</h2>
+                            <p>Build with the d3.js library each band was represented as a circle or bubble.
+                               The radius of its bubble was tied with the ‘buzz score’ of the band which varied depending on how much people were talking about that band on twitter, 
+                               there were also different filters you can apply to the bubbles to change the point of gravity and separate them depending on the genre of music, 
+                               the top 5 bands or even transform the bubbles into points of a dynamic chart where you can compare factors like tweets, mentions, followers or hashtags, all of these updating with real time tweets.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="experiments">
+            <div class="container">
+                <h1 class="text-center">Latest Experiments</h1>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="chromebox">
+                            <a href="http://recme.meteor.com/" class="url" target="_blank">http://recme.meteor.com/</a>
+                            <div class="carousel">
+                                <div><img src="img/recme.png" alt="RecMe" /></div>
+                                <div><img src="img/recme2.png" alt="RecMe" /></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="project_description">
+                            <h2>RecMe (Recommend me places)</h2>
+                            <p>It's an application build with <a href="http://www.meteor.com" title="meteor.com">Meteor</a>, I created it when I first
+                            got to London, so people could recommend me interesting places to go, to eat, to go out, etc.</p>
+                            <p>It was also a perfect time to test how fast rapid development can go with Meteor, the whole application was done in one afternon 
+                            and with only <strong>194 lines of Javascript for both the front end and the back end</strong>, well to be fair Meteor is so cool I 
+                            didn't event need a <a href="https://github.com/beldar/recme/blob/master/recme.js#L192" target="_blank" title="THE single line">single line</a> on the backend for it to work</p>
+                            <p><a href="https://github.com/beldar/recme/" target="_blank" title="Code in Github">Checkout the code in Github!</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <ul class="grid">
+                <li class="ot-letter-left"><span data-letter="C">C</span></li>
+                <li class="ot-letter-top"><span data-letter="O">O</span></li>
+                <li class="ot-letter-right"><span data-letter="N">N</span></li>
+                <li class="ot-letter-bottom"><span data-letter="T">T</span></li>
+                <li class="ot-letter-left"><span data-letter="A">A</span></li>
+                <li class="ot-letter-top"><span data-letter="C">C</span></li>
+                <li class="ot-letter-right"><span data-letter="T">T</span></li>
+            </ul>
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h2>Where to find me</h2>
+                        <br /> <br />
+                        <a href="http://twitter.com/beldar" class="social" target="_blank">
+                            <i class="icon-twitter icon-large"></i>
+                            @beldar at Twitter
+                        </a><br/>
+                        <a href="http://twitter.com/beldar" class="social" target="_blank">
+                            <i class="icon-linkedin icon-large"></i>
+                            Martí Planellas at LinkedIn
+                        </a><br/>
+                        <a href="http://github.com/beldar" class="social" target="_blank">
+                            <i class="icon-github-alt icon-large"></i>
+                            beldar at Github
+                        </a><br/>
+                        <a href="https://plus.google.com/u/+MartíPlanellas" class="social" target="_blank">
+                            <i class="icon-google-plus icon-large"></i>
+                            +MartíPlanellas at Google+
+                        </a><br/>
+                        
+                    </div>
+                    <div class="col-sm-8">
+                        <h2>Drop me a line!</h2>
+                        <br /><br />
+                        <form method="post" id="contactform" class="form" onsubmit="return false;">
+                            <div class="row">
+                                <div class="col-xs-6 col-md-6 form-group">
+                                    <input class="form-control" id="name" name="name" placeholder="Name" type="text" required autofocus />
+                                </div>
+                                <div class="col-xs-6 col-md-6 form-group">
+                                    <input class="form-control" id="email" name="email" placeholder="Email" type="email" required />
+                                </div>
+                            </div>
+                            <textarea class="form-control" id="message" name="message" placeholder="Message" rows="15"></textarea>
+                            <br />
+                            <div class="row">
+                                <div class="col-xs-12 col-md-12 form-group">
+                                    <button id="sendbtn" data-loading-text="Sending..." class="btn btn-primary pull-right" type="submit">Submit</button>
+                                </div>
+                            </div>
+                            <div id="emailok" class="alert alert-success alert-dismissable hidden">
+                                <strong>Message sent!</strong> Thank you for your message, I'll get back to you ASAP!
+                            </div>
+                            <div id="emailko" class="alert alert-danger alert-dismissable hidden">
+                                <strong>Something went wrong!</strong> Sorry for the inconvenience, please try me on any of the social networks above.
+                            </div>
+                       </form>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <script src="js/vendor/jquery-1.8.0.min.js"></script>
+        <script src="js/vendor/underscore.min.js"></script>
+        <script src="js/vendor/backbone-min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID.
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script> -->
+    </body>
+</html>
