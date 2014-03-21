@@ -3,11 +3,11 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Martí -- Developer -- @beldar
 
 # THANKS
 
-    <name>
+    To the world
 
 # TECHNOLOGY COLOPHON
 
