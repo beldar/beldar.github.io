@@ -200,6 +200,7 @@ nav ul li a {
     -o-transition: all 0.5s ease-in-out;
     -ms-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
+    -webkit-transform: translate3d(0,0,0);
 }
 
 nav ul li a:hover,  nav ul li a.active{
@@ -222,6 +223,7 @@ nav ul li a:after, nav ul li a:before {
     -o-transition: all 0.5s ease-in-out;
     -ms-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
+    -webkit-transform: translate3d(0,0,0);
     border-width: 0px;
 }
 
@@ -262,6 +264,7 @@ svg path {
     fill: transparent;
     stroke: white;
     transition: stroke-width 2s, stroke-dashoffset 2s, stroke-dasharray 2s;
+    -webkit-transform: translate3d(0,0,0);
 }
 section#welcome > .container > .row {
     margin-top: 61px;
@@ -344,6 +347,7 @@ section#skills {
     -webkit-transition: background 0.2s, color 0.2s;
     -moz-transition: background 0.2s, color 0.2s;
     transition: background 0.2s, color 0.2s;
+    -webkit-transform: translate3d(0,0,0);
 }
 .hi-icon:after {
     top: -7px;
@@ -357,6 +361,7 @@ section#skills {
     -ms-transform: scale(.8);
     transition: transform 0.2s, opacity 0.2s;
     transform: scale(.8);
+    -webkit-transform: translate3d(0,0,0);
     opacity: 0;
 }
 .skill:hover .hi-icon {
@@ -482,6 +487,7 @@ section#contact a.social i {
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
+    -webkit-transform: translate3d(0,0,0);
 }
 section#contact a.social:hover i {
     font-size: 2em;
@@ -535,6 +541,7 @@ section#contact form {
         -o-transition: all 0.5s ease-in-out;
         -ms-transition: all 0.5s ease-in-out;
         transition: all 0.5s ease-in-out;
+        -webkit-transform: translate3d(0,0,0);
         border-width: 0px;
     }
 
