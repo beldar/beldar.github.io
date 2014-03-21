@@ -22,13 +22,7 @@ var AppView = Backbone.View.extend({
         
         this.setHeights();
         
-        if ( navigator.userAgent.match(/iPad/i) !== null ) {
-            /*setTimeout(function(){
-                this.initSvgAnimation();
-            },1000);*/
-        } else {
-            this.initSvgAnimation();
-        }
+        this.initSvgAnimation();
         
         this.carouselSpeed = 4000;
         setTimeout(function(){
@@ -40,7 +34,7 @@ var AppView = Backbone.View.extend({
     },
         
     initSvgAnimation: function(){
-        var that = this;
+        var that = this
         this.preparesvgs();
         this.animate();
         this.interval = setInterval(function() {
