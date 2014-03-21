@@ -154,6 +154,8 @@ section > .container {
     text-align: center;
     vertical-align: middle;
     color: white;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .row {
     margin-bottom: 30px;
@@ -454,7 +456,7 @@ section#contact a.social {
     cursor: pointer;
     padding: 25px;
     display: block;
-    margin: 15px 30px;
+    margin: 15px 0px;
     position: relative;
     background: #cb4e4e;
     color: #fff;
