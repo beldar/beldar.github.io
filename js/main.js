@@ -45,6 +45,12 @@ var AppView = Backbone.View.extend({
     setHeights: function(){
         $("section").css('height', $(window).height());
         $("section#contact > .container > .row").css('margin-top', $("ul.grid").outerHeight()+30);
+        
+        if ($(window).width()<768) {
+            $("nav").on('click', function(){
+                $(this).toggleClass('open');
+            });
+        }
     },
     
     scrollSpy: function(e) {
