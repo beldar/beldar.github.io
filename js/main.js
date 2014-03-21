@@ -29,7 +29,10 @@ var AppView = Backbone.View.extend({
         }, $("svg").length * 4000);
         
         this.carouselSpeed = 4000;
-        this.initCarousel();
+        setTimeout(function(){
+            that.initCarousel();
+        },100);
+        
         $("html,body").animate({scrollTop: 0}, 1000);
        
     },
