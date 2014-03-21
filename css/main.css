@@ -514,10 +514,10 @@ section#contact form {
         transition: height 1s;
         -webkit-transition: height 1s;
     }
-    nav:hover ul{
+    nav:focus ul{
         height: 305px !important;
     }
-    nav:hover ul li a {
+    nav:focus ul li a {
         display:block !important;
     }
     nav ul li {
