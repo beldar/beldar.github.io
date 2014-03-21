@@ -23,9 +23,9 @@ var AppView = Backbone.View.extend({
         this.setHeights();
         
         if ( navigator.userAgent.match(/iPad/i) !== null ) {
-            setTimeout(function(){
+            /*setTimeout(function(){
                 this.initSvgAnimation();
-            },1000);
+            },1000);*/
         } else {
             this.initSvgAnimation();
         }
