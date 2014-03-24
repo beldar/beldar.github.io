@@ -489,9 +489,11 @@ section#contact a.social i {
     transition: all 0.3s;
     -webkit-transform: translate3d(0,0,0);
 }
+section#contact a.social i.icon-antenna { font-size: 2em; }
 section#contact a.social:hover i {
     font-size: 2em;
 }
+section#contact a.social:hover i.icon-antenna { font-size: 4em; margin-top: -10px;}
 section#contact .alert-success strong {
     color:#468847 !important;
 }
