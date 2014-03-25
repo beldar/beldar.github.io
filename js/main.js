@@ -29,7 +29,7 @@ var AppView = Backbone.View.extend({
             that.initCarousel();
         },500);
         
-        //$("html,body").animate({scrollTop: 0}, 1000);
+        $("html,body").animate({scrollTop: 0}, 0);
        
     },
         
