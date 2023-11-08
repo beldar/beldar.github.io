@@ -209,7 +209,7 @@ nav ul li a:hover,  nav ul li a.active{
 }
 
 nav ul li a:after, nav ul li a:before {
-    top: 107%;
+    top: 106%;
     left: 50%;
     border: solid transparent;
     content: " ";
